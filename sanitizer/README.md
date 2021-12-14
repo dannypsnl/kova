@@ -9,3 +9,8 @@
     ```
     clang -fsanitize=address useafterfree.c
     ```
+
+3. uninitialized memory
+    ```
+    clang -fsanitize=memory memory.c
+    ```
