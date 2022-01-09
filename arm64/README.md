@@ -22,3 +22,7 @@ arm64 note
   4. lr/x30: stores the return address of function
   5. cpsr
   6. spsr
+
+## Print integer
+
+The file [print-number.s](./print-number.s) shows how it works.
