@@ -25,4 +25,15 @@ int main() {
   end = clock();
   printf("Time measured: %.3f seconds.\n",
          ((double)(end - start)) / CLOCKS_PER_SEC);
+
+  start = clock();
+  for (int i = 0; i < N; i += 4) {
+    f(i);
+    f(i + 1);
+    f(i + 2);
+    f(i + 3);
+  }
+  end = clock();
+  printf("Time measured: %.3f seconds.\n",
+         ((double)(end - start)) / CLOCKS_PER_SEC);
 }
